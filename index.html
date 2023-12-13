@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>お問合わせフォーム</title>
+</head>
+<body>
+  <h1>お問合わせフォーム</h1>
+  <form method="post" action="mail_confirm.php">
+    <div>
+      <label for="name">名前</label>
+      <br>
+      <input type="text" id="name" class="input_form" name="name" size="30">
+    </div>
+    <div>
+      <label for="mail">メールアドレス</label>
+      <br>
+      <input type="text" id="mail" class="input_form" name="mail" size="30">
+    </div>
+    <div>
+      <label for="age">年齢</label>
+      <br>
+      <select name="age" id="age" class="input_form">
+        <option value="">選択してください</option>
+        <script>
+          for (var i = 18; i <= 65; i++) {
+            document.write("<option value=" + i + ">" + i + "歳</option>");
+          }
+        </script>
+      </select>
+    </div>
+    <div>
+      <label for="comment">コメント</label>
+      <br>
+      <textarea name="comments" id="comment" cols="30" rows="7" class="input_form"></textarea>
+    </div>
+    <div>
+      <input type="submit" class="submit" value="送信する">
+    </div>
+  </form>
+</body>
+</html>

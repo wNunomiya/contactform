@@ -1,0 +1,42 @@
+body {
+  margin: 0 auto;
+  width: 500px;
+}
+
+h1 {
+  background-color: rgb(224, 224, 224);
+  padding: 5px 20px;
+  border-left: 5px solid red;
+}
+
+.confirm {
+  border: 3px solid rgb(224, 224, 224);
+  border-radius: 10px;
+  background-color: rgb(248, 248, 248);
+  padding: 15px;
+}
+
+.btn_back {
+  color: white;
+  background-color: darkgrey;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border-bottom: 2px solid rgb(83, 83, 83);
+  cursor: pointer;
+}
+
+.btn_regist  {
+  color: white;
+  background-color: rgb(255, 173, 72);
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border-bottom: 2px solid darkorange;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  column-gap: 15px;
+}
